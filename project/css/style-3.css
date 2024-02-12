@@ -1,0 +1,69 @@
+/* This style is for payment.html and main-3.js*/
+body{
+   background-image: url(../images/backgroundimg.jpg);
+   background-size: cover;
+
+}
+form{
+    margin-top: 80px;
+    text-align: center;
+}
+
+label{
+    color: aliceblue;
+    font-size: 24px;
+    display: block;
+}
+
+input{
+   
+    padding-left: 20px;
+}
+
+input[type="submit"]{
+    font-size: 24px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 6px 0px 6px 0px;
+    padding: 10px;
+}
+input[type="submit"]:hover{
+    border-color: aliceblue;
+}
+input[type="text"],input[type="number"],textarea
+{
+    font-size: large;
+    border-radius: 6px 0px 6px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+textarea{
+    margin-top: 10px;
+}
+
+input.valid{
+	
+	border-color: green;
+}
+input.invalid{
+	
+	border-color: rgb(255, 13, 0);
+}
+label.invalid{
+    color: red;
+}
+input+h3{
+	
+	text-align: center;
+	font-weight: bold;
+	margin: 0 10px;
+	color: rgb(255, 0, 0);
+	opacity: 0;
+	height: 0;
+}
+input.invalid + h3{
+	
+	opacity: 1;
+	height:auto;
+	margin-bottom: 20px;
+}

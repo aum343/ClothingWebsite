@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <!--Style-2 is completely for login Page-->
+    <link rel="stylesheet" href="../css/style-2.css">
+    <!--Main-2.js is for login Page-->
+    
+</head>
+<body>
+    
+    <form>
+      
+        <div class="wrap">
+        <label>Email or User Name</label>
+        <!--I used on keyup so as soon as user types something we will send the value the function PasswordCheck-->
+        <input type="text" id="class" placeholder="abcd or adbcd123@gmail.com" onkeyup="UserNameCheck(this.value)">
+       </div>
+        <h3 class="ivalidationMessage">Username Must contain 5-12 character or it should be valid email</h3>
+      
+
+     
+       
+        <div class="wrap">
+        <label>Password</label>
+        <!--I used on keyup so as soon as user types something we will send the value the function PasswordCheck-->
+        <input type="password" id="Password" placeholder="ex.Abcd123," onkeyup="PasswordCheck(this.value)">
+        </div>
+        <h3 class="pvalidationMessage">Password must contain atleast one Uppercase</h3>
+        <h3 class="pvalidationMessage">Password must contain atleast one Lowercase</h3>
+        <h3 class="pvalidationMessage">Password must contain atleast one numeric value</h3>
+        <h3 class="pvalidationMessage">Password must contain atleast one special character</h3>
+        <h3 class="pvalidationMessage">Password must contain atleast 6 character</h3>
+        
+    
+    <div class="wrap">
+        <a href="../html/index.html"><input type="button" value="Login" id="btn_submit"></a>
+    </div>
+    </form>
+ 
+    <script src="../js/main-2.js"></script>
+</body>
+</html>

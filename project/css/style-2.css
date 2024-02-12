@@ -1,0 +1,65 @@
+body{
+background-image: url(../images/backgroundimg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: rgb(163, 162, 162);
+   font-weight:300;
+   font-size: 30px;
+}
+form{
+    margin-top: 30px;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+   
+}
+#box{
+    box-sizing: border-box;
+    
+}
+
+input{
+   padding: 10px 20px;
+   margin: 20px 3px;
+   border-radius: 3px 6px 3px 6px;
+}
+input[type='button']{
+    background-color: rgb(3, 0, 0);
+    color: rgb(244, 239, 239);
+    border: 2px solid rgb(128, 128, 128);
+    font-size: 24px;
+    margin-bottom: 20%
+}
+input[type='button']:hover{
+    cursor: pointer;
+    border-color: azure;
+}
+/*
+.valid input{
+   border-color: greenyellow; 
+}
+
+.invalid input{
+    border-color: rgb(255, 69, 69);
+}
+
+.validationMessage{
+    opacity: 0;
+}
+.invalid .validationMessage{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+*/
+.ivalidationMessage{
+    color: red;
+    text-align: center;
+}
+.pvalidationMessage{
+    color: red;
+    text-align: center;
+}
